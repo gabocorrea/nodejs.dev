@@ -14,6 +14,6 @@ When you add the `-D` flag, or `--save-dev`, you are installing it as a developm
 
 Development dependencies are intended as development-only packages, that are unneeded in production. For example testing packages, webpack or Babel.
 
-When you go in production, if you type `npm install` and the folder contains a `package.json` file, they are installed, as npm assumes this is a development deploy.
+When you go in production, if you type `npm install` and the folder contains a `package.json` file, `devDependencies` are installed too, as npm assumes this is a development deploy.
 
 You need to set the `--production` flag (`npm install --production`) to avoid installing those development dependencies.
